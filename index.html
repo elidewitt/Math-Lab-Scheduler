@@ -1,7 +1,11 @@
+<!--
+ * Date Last Modified: 04/15/24
+ * @author Eli DeWitt
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
     <meta charset="utf-8">
     <title>Math Lab Scheduler</title>
     <!-- <link rel="shortcut icon" type="image/png" href="../shared/icon.png"/> -->
@@ -29,8 +33,10 @@
   </head>
   <body>      
       
+    <label for="availabilityData">Select a file:</label>
+    <input type="file" id="availabilityData" name="availabilityData" accept=".tsv" onchange="imported()">
+
     <div id="target"></div>
-    
     
     <script src="data.js"></script>
     <script src="main.js"></script>
